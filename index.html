@@ -93,9 +93,43 @@
           transition: none !important;
         }
       }
+
+      .pattern {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 70%;
+        right: 0px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        pointer-events: none;
+        z-index: -10;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        /* border: 2px solid white; */
+      }
     </style>
   </head>
   <body>
+    <div class="pattern">
+      <img
+        src="3.svg"
+        alt=""
+        style="
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 0;
+          height: 400px;
+          width: 400px;
+          /* border: 2px solid white; */
+        "
+      />
+    </div>
     <elevenlabs-convai
       agent-id="agent_7101k6cffxxsfsqrgk3me10zf4p5"
     ></elevenlabs-convai>
